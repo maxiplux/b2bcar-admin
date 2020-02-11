@@ -20,6 +20,12 @@ jobs:
     - run: npm install yarn
     - run: yarn
     - run: npm run build
-    - run: yarn deploy
+    - run: git add .
+    - run: git commit -m 'Some descriptive commit message'
+    - run: git push origin master
+    - run: git checkout gh-pages 
+    - run: git rebase master
+    - run: git push origin gh-pages
+    - run: git checkout master
       env:
         CI: true
