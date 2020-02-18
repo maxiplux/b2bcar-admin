@@ -3,8 +3,8 @@ import React, { useState,useEffect, useDebugValue } from 'react';
 import { Table, Divider, Tag,Form, Icon, Input, Button, Checkbox,Row, Col,Modal ,Layout  } from "antd";
 
 import ProductSettings from './Product.Settings';
-import ProductServices from '../../../services/products/ProductServices';
-import PlaceHolder from '../../PlaceHolder';
+import ProductServices from '../../services/products/ProductServices';
+import PlaceHolder from '../PlaceHolder';
 const { Header, Footer,  Content } = Layout;
 
 const ProductList = (props)=> { 
